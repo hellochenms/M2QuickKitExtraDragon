@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-
 #import "StaticNotTouchLaunchADView.h"
 #import <Masonry/Masonry.h>
+#import "M2UserNoTouchMonitorViewController.h"
 
 static NSString * const kCellIdentifier = @"kCellIdentifier";
 
@@ -25,19 +25,14 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
     // Do any additional setup after loading the view, typically from a nib.
     self.automaticallyAdjustsScrollViewInsets = NO;
 
-    self.datas = @[
-                   
+    self.datas = @[@[@"UserNoTouchMonitor", [M2UserNoTouchMonitorViewController class]],
                    ];
 
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
 
     StaticNotTouchLaunchADView *view = [[StaticNotTouchLaunchADView alloc] initWithFrame:CGRectMake(10, 10, 100, 100)];
-    view.imagePathProvider = ^{
-        return [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"launchAD@2x.png"];
-    };
-    view.showingTimerIntervalProvider = ^{
-        return 5.0;
-    };
+    view.imagePath =[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"launchAD@2x.png"];
+    view.showingTimerIntervalProvider = 2;
     [self.navigationController.view addSubview:view];
 }
 

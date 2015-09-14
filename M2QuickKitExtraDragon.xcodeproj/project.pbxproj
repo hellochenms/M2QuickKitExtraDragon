@@ -18,6 +18,9 @@
 		1AE20A801BA6777200E5ED1F /* M7DebugLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE20A7F1BA6777200E5ED1F /* M7DebugLogFormatter.m */; };
 		1AE20A851BA67C2E00E5ED1F /* StaticNotTouchLaunchADView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE20A841BA67C2E00E5ED1F /* StaticNotTouchLaunchADView.m */; };
 		1AE20A911BA6A81A00E5ED1F /* launchAD@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE20A901BA6A81A00E5ED1F /* launchAD@2x.png */; };
+		1AE20A951BA6B12900E5ED1F /* M2UserNoTouchMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE20A941BA6B12900E5ED1F /* M2UserNoTouchMonitor.m */; };
+		1AE20A991BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE20A971BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.m */; };
+		1AE20A9A1BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE20A981BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,11 @@
 		1AE20A831BA67C2E00E5ED1F /* StaticNotTouchLaunchADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticNotTouchLaunchADView.h; sourceTree = "<group>"; };
 		1AE20A841BA67C2E00E5ED1F /* StaticNotTouchLaunchADView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticNotTouchLaunchADView.m; sourceTree = "<group>"; };
 		1AE20A901BA6A81A00E5ED1F /* launchAD@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchAD@2x.png"; sourceTree = "<group>"; };
+		1AE20A931BA6B12900E5ED1F /* M2UserNoTouchMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2UserNoTouchMonitor.h; sourceTree = "<group>"; };
+		1AE20A941BA6B12900E5ED1F /* M2UserNoTouchMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2UserNoTouchMonitor.m; sourceTree = "<group>"; };
+		1AE20A961BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2UserNoTouchMonitorViewController.h; sourceTree = "<group>"; };
+		1AE20A971BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2UserNoTouchMonitorViewController.m; sourceTree = "<group>"; };
+		1AE20A981BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = M2UserNoTouchMonitorViewController.xib; sourceTree = "<group>"; };
 		63946F106D8F4321F338F708 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C4EE22F3EADD7E318E9BCBB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A078777A49A2D3AADDFA0D31 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				1AE20A821BA67B0A00E5ED1F /* StaticNotTouchLaunchAD */,
+				1AE20A921BA6B0D200E5ED1F /* UserNoTouchThenDo */,
 			);
 			name = UILogic;
 			path = Src/UILogic;
@@ -214,6 +223,18 @@
 				1AE20A841BA67C2E00E5ED1F /* StaticNotTouchLaunchADView.m */,
 			);
 			path = StaticNotTouchLaunchAD;
+			sourceTree = "<group>";
+		};
+		1AE20A921BA6B0D200E5ED1F /* UserNoTouchThenDo */ = {
+			isa = PBXGroup;
+			children = (
+				1AE20A961BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.h */,
+				1AE20A971BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.m */,
+				1AE20A981BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.xib */,
+				1AE20A931BA6B12900E5ED1F /* M2UserNoTouchMonitor.h */,
+				1AE20A941BA6B12900E5ED1F /* M2UserNoTouchMonitor.m */,
+			);
+			path = UserNoTouchThenDo;
 			sourceTree = "<group>";
 		};
 		C6DA77D051849A604366D5E5 /* Pods */ = {
@@ -316,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AE20A5C1BA6755900E5ED1F /* Main.storyboard in Resources */,
+				1AE20A9A1BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.xib in Resources */,
 				1AE20A611BA6755900E5ED1F /* LaunchScreen.xib in Resources */,
 				1AE20A911BA6A81A00E5ED1F /* launchAD@2x.png in Resources */,
 				1AE20A5E1BA6755900E5ED1F /* Images.xcassets in Resources */,
@@ -370,10 +392,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AE20A591BA6755900E5ED1F /* ViewController.m in Sources */,
+				1AE20A951BA6B12900E5ED1F /* M2UserNoTouchMonitor.m in Sources */,
 				1AE20A801BA6777200E5ED1F /* M7DebugLogFormatter.m in Sources */,
 				1AE20A561BA6755900E5ED1F /* AppDelegate.m in Sources */,
 				1AE20A851BA67C2E00E5ED1F /* StaticNotTouchLaunchADView.m in Sources */,
 				1AE20A531BA6755900E5ED1F /* main.m in Sources */,
+				1AE20A991BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

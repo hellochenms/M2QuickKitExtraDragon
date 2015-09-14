@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="M2UserNoTouchMonitorViewController">
+            <connections>
+                <outlet property="loginButton" destination="giu-79-RRR" id="wf2-NN-ekH"/>
+                <outlet property="logoutButton" destination="puI-cf-nr4" id="atN-v7-lTa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puI-cf-nr4">
+                    <rect key="frame" x="320" y="74" width="240" height="44"/>
+                    <state key="normal" title="Logout">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onTapLogout:" destination="-1" eventType="touchUpInside" id="8yy-j3-646"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giu-79-RRR">
+                    <rect key="frame" x="40" y="74" width="240" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="8Bb-Xf-Xao"/>
+                    </constraints>
+                    <state key="normal" title="Login">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onTapLogin:" destination="-1" eventType="touchUpInside" id="xCh-fO-dAA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="puI-cf-nr4" firstAttribute="height" secondItem="giu-79-RRR" secondAttribute="height" id="2b4-uC-gjR"/>
+                <constraint firstItem="giu-79-RRR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Fac-Rz-OZb"/>
+                <constraint firstItem="giu-79-RRR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="IQJ-mC-K4p"/>
+                <constraint firstItem="puI-cf-nr4" firstAttribute="centerY" secondItem="giu-79-RRR" secondAttribute="centerY" id="bJN-Ig-h2A"/>
+                <constraint firstItem="puI-cf-nr4" firstAttribute="leading" secondItem="giu-79-RRR" secondAttribute="trailing" constant="40" id="kB3-37-gXZ"/>
+                <constraint firstItem="puI-cf-nr4" firstAttribute="width" secondItem="giu-79-RRR" secondAttribute="width" id="o6V-hO-KEZ"/>
+                <constraint firstAttribute="trailing" secondItem="puI-cf-nr4" secondAttribute="trailing" constant="40" id="rzD-WE-yLS"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

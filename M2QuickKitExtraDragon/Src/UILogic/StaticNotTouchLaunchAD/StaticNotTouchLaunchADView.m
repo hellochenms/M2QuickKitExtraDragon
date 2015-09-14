@@ -46,13 +46,9 @@ static NSInteger const kAnimationInterval = 1; // ? 低于一秒无动画效果�
         }];
 
         dispatch_async(dispatch_get_main_queue(), ^{
-            if (weakSelf.imagePathProvider) {
-                NSString *imagePath = weakSelf.imagePathProvider();
-                UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
+            if (weakSelf.imagePath) {
+                UIImage *image = [UIImage imageWithContentsOfFile:weakSelf.imagePath];
                 weakSelf.imageView.image = image;
-            }
-            if (weakSelf.showingTimerIntervalProvider) {
-                weakSelf.showingTimerInterval = weakSelf.showingTimerIntervalProvider();
             }
             [weakSelf startAutoRemoveTimer];
         });
@@ -77,6 +73,11 @@ static NSInteger const kAnimationInterval = 1; // ? 低于一秒无动画效果�
     } repeats:NO];
 }
 
+#pragma mark - dealloc
+- (void)dealloc {
+    [self.timer invalidate];
+}
+
 @end
 
 #pragma mark - NSTimer Category
@@ -84,7 +85,6 @@ static NSInteger const kAnimationInterval = 1; // ? 低于一秒无动画效果�
 + (NSTimer *)snt_scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                           block:(void(^)())block
                                         repeats:(BOOL)repeats {
-
     return [self scheduledTimerWithTimeInterval:interval
                                          target:self
                                        selector:@selector(snt_invokeBlock:)

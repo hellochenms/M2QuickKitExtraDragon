@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "M7DebugLogFormatter.h"
+#import "M2UserNoTouchMonitor.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,8 @@
     // Override point for customization after application launch.
 
     [self prepareForLog];
+
+    [M2UserNoTouchMonitor sharedInstance];
 
     return YES;
 }

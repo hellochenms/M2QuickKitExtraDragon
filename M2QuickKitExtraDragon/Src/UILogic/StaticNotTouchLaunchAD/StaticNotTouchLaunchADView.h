@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface StaticNotTouchLaunchADView : UIView
-@property (nonatomic, copy) NSString * (^imagePathProvider)();
-@property (nonatomic, copy) NSTimeInterval (^showingTimerIntervalProvider)();
+@property (nonatomic, copy) NSString *imagePath;
+@property (nonatomic) NSTimeInterval showingTimerIntervalProvider;
 @end
