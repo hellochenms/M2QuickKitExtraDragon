@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0D77A2E080974DFF06A703A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63946F106D8F4321F338F708 /* libPods.a */; };
+		1AC7CD281BB1630E00091FE0 /* M2PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC7CD241BB1630E00091FE0 /* M2PopupViewController.m */; };
+		1AC7CD291BB1630E00091FE0 /* M2PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC7CD251BB1630E00091FE0 /* M2PopupViewController.xib */; };
+		1AC7CD2A1BB1630E00091FE0 /* UIViewController+M2Popup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC7CD271BB1630E00091FE0 /* UIViewController+M2Popup.m */; };
+		1AC7CD301BB1636A00091FE0 /* M2SimpleKeyboardOverlapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC7CD2F1BB1636A00091FE0 /* M2SimpleKeyboardOverlapHelper.m */; };
+		1AC7CD371BB1639E00091FE0 /* PopupSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC7CD321BB1639E00091FE0 /* PopupSubViewController.m */; };
+		1AC7CD381BB1639E00091FE0 /* PopupSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC7CD331BB1639E00091FE0 /* PopupSubViewController.xib */; };
+		1AC7CD3E1BB165BD00091FE0 /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC7CD3C1BB165BD00091FE0 /* PopupViewController.m */; };
+		1AC7CD3F1BB165BD00091FE0 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC7CD3D1BB165BD00091FE0 /* PopupViewController.xib */; };
 		1AE20A531BA6755900E5ED1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE20A521BA6755900E5ED1F /* main.m */; };
 		1AE20A561BA6755900E5ED1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE20A551BA6755900E5ED1F /* AppDelegate.m */; };
 		1AE20A591BA6755900E5ED1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE20A581BA6755900E5ED1F /* ViewController.m */; };
@@ -34,6 +42,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AC7CD231BB1630E00091FE0 /* M2PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2PopupViewController.h; sourceTree = "<group>"; };
+		1AC7CD241BB1630E00091FE0 /* M2PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2PopupViewController.m; sourceTree = "<group>"; };
+		1AC7CD251BB1630E00091FE0 /* M2PopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = M2PopupViewController.xib; sourceTree = "<group>"; };
+		1AC7CD261BB1630E00091FE0 /* UIViewController+M2Popup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+M2Popup.h"; sourceTree = "<group>"; };
+		1AC7CD271BB1630E00091FE0 /* UIViewController+M2Popup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+M2Popup.m"; sourceTree = "<group>"; };
+		1AC7CD2E1BB1636A00091FE0 /* M2SimpleKeyboardOverlapHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SimpleKeyboardOverlapHelper.h; sourceTree = "<group>"; };
+		1AC7CD2F1BB1636A00091FE0 /* M2SimpleKeyboardOverlapHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SimpleKeyboardOverlapHelper.m; sourceTree = "<group>"; };
+		1AC7CD311BB1639E00091FE0 /* PopupSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupSubViewController.h; sourceTree = "<group>"; };
+		1AC7CD321BB1639E00091FE0 /* PopupSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupSubViewController.m; sourceTree = "<group>"; };
+		1AC7CD331BB1639E00091FE0 /* PopupSubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupSubViewController.xib; sourceTree = "<group>"; };
+		1AC7CD3B1BB165BD00091FE0 /* PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupViewController.h; sourceTree = "<group>"; };
+		1AC7CD3C1BB165BD00091FE0 /* PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupViewController.m; sourceTree = "<group>"; };
+		1AC7CD3D1BB165BD00091FE0 /* PopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 		1AE20A4D1BA6755900E5ED1F /* M2QuickKitExtraDragon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M2QuickKitExtraDragon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE20A511BA6755900E5ED1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AE20A521BA6755900E5ED1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,6 +103,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AC7CD221BB162C500091FE0 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				1AC7CD3B1BB165BD00091FE0 /* PopupViewController.h */,
+				1AC7CD3C1BB165BD00091FE0 /* PopupViewController.m */,
+				1AC7CD3D1BB165BD00091FE0 /* PopupViewController.xib */,
+				1AC7CD311BB1639E00091FE0 /* PopupSubViewController.h */,
+				1AC7CD321BB1639E00091FE0 /* PopupSubViewController.m */,
+				1AC7CD331BB1639E00091FE0 /* PopupSubViewController.xib */,
+				1AC7CD231BB1630E00091FE0 /* M2PopupViewController.h */,
+				1AC7CD241BB1630E00091FE0 /* M2PopupViewController.m */,
+				1AC7CD251BB1630E00091FE0 /* M2PopupViewController.xib */,
+				1AC7CD261BB1630E00091FE0 /* UIViewController+M2Popup.h */,
+				1AC7CD271BB1630E00091FE0 /* UIViewController+M2Popup.m */,
+			);
+			name = Popup;
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		1AE20A441BA6755900E5ED1F = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +208,8 @@
 		1AE20A781BA6771900E5ED1F /* UIUtils */ = {
 			isa = PBXGroup;
 			children = (
+				1AC7CD2E1BB1636A00091FE0 /* M2SimpleKeyboardOverlapHelper.h */,
+				1AC7CD2F1BB1636A00091FE0 /* M2SimpleKeyboardOverlapHelper.m */,
 			);
 			path = UIUtils;
 			sourceTree = "<group>";
@@ -177,6 +219,7 @@
 			children = (
 				1AE20A821BA67B0A00E5ED1F /* StaticNotTouchLaunchAD */,
 				1AE20A921BA6B0D200E5ED1F /* UserNoTouchThenDo */,
+				1AC7CD221BB162C500091FE0 /* Popup */,
 			);
 			name = UILogic;
 			path = Src/UILogic;
@@ -336,10 +379,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC7CD381BB1639E00091FE0 /* PopupSubViewController.xib in Resources */,
 				1AE20A5C1BA6755900E5ED1F /* Main.storyboard in Resources */,
 				1AE20A9A1BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.xib in Resources */,
+				1AC7CD3F1BB165BD00091FE0 /* PopupViewController.xib in Resources */,
 				1AE20A611BA6755900E5ED1F /* LaunchScreen.xib in Resources */,
 				1AE20A911BA6A81A00E5ED1F /* launchAD@2x.png in Resources */,
+				1AC7CD291BB1630E00091FE0 /* M2PopupViewController.xib in Resources */,
 				1AE20A5E1BA6755900E5ED1F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,10 +440,15 @@
 				1AE20A591BA6755900E5ED1F /* ViewController.m in Sources */,
 				1AE20A951BA6B12900E5ED1F /* M2UserNoTouchMonitor.m in Sources */,
 				1AE20A801BA6777200E5ED1F /* M7DebugLogFormatter.m in Sources */,
+				1AC7CD2A1BB1630E00091FE0 /* UIViewController+M2Popup.m in Sources */,
 				1AE20A561BA6755900E5ED1F /* AppDelegate.m in Sources */,
+				1AC7CD281BB1630E00091FE0 /* M2PopupViewController.m in Sources */,
 				1AE20A851BA67C2E00E5ED1F /* StaticNotTouchLaunchADView.m in Sources */,
+				1AC7CD3E1BB165BD00091FE0 /* PopupViewController.m in Sources */,
 				1AE20A531BA6755900E5ED1F /* main.m in Sources */,
 				1AE20A991BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.m in Sources */,
+				1AC7CD301BB1636A00091FE0 /* M2SimpleKeyboardOverlapHelper.m in Sources */,
+				1AC7CD371BB1639E00091FE0 /* PopupSubViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

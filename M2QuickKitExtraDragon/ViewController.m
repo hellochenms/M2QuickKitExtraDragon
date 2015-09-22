@@ -10,6 +10,7 @@
 #import "StaticNotTouchLaunchADView.h"
 #import <Masonry/Masonry.h>
 #import "M2UserNoTouchMonitorViewController.h"
+#import "PopupViewController.h"
 
 static NSString * const kCellIdentifier = @"kCellIdentifier";
 
@@ -26,6 +27,7 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
     self.automaticallyAdjustsScrollViewInsets = NO;
 
     self.datas = @[@[@"UserNoTouchMonitor", [M2UserNoTouchMonitorViewController class]],
+                   @[@"Popup", [PopupViewController class]],
                    ];
 
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];

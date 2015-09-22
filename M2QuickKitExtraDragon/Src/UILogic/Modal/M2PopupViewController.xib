@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="M2PopupViewController">
+            <connections>
+                <outlet property="backgroundView" destination="9jU-q6-YK9" id="Wz8-Oi-W3G"/>
+                <outlet property="frontCenterXConstraint" destination="nF8-0W-Wwz" id="JsR-u9-ZLf"/>
+                <outlet property="frontCenterYConstraint" destination="gCo-kx-vxK" id="bih-44-BXn"/>
+                <outlet property="frontHeightConstraint" destination="Jce-Hc-M9a" id="UTV-y7-Sjb"/>
+                <outlet property="frontView" destination="2hH-pg-oQe" id="QQt-RU-6rg"/>
+                <outlet property="frontWidthConstraint" destination="Mu7-Q8-5yd" id="LvQ-pD-uOO"/>
+                <outlet property="middleView" destination="J5u-7j-pgn" id="dO5-1S-arR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9jU-q6-YK9" userLabel="backgroundView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5u-7j-pgn" userLabel="middleView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="A4b-En-0Sb" appends="YES" id="fox-0h-lds"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hH-pg-oQe" userLabel="frontView">
+                    <rect key="frame" x="200" y="200" width="200" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Jce-Hc-M9a"/>
+                        <constraint firstAttribute="width" constant="200" id="Mu7-Q8-5yd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9jU-q6-YK9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ark-0J-j4G"/>
+                <constraint firstAttribute="bottom" secondItem="J5u-7j-pgn" secondAttribute="bottom" id="Btj-hO-HeO"/>
+                <constraint firstAttribute="trailing" secondItem="9jU-q6-YK9" secondAttribute="trailing" id="Dbm-Yl-vkr"/>
+                <constraint firstAttribute="bottom" secondItem="9jU-q6-YK9" secondAttribute="bottom" id="GpD-1V-irq"/>
+                <constraint firstAttribute="trailing" secondItem="J5u-7j-pgn" secondAttribute="trailing" id="VGN-bH-Gb7"/>
+                <constraint firstItem="J5u-7j-pgn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cux-B2-wYp"/>
+                <constraint firstAttribute="centerY" secondItem="2hH-pg-oQe" secondAttribute="centerY" id="gCo-kx-vxK"/>
+                <constraint firstAttribute="centerX" secondItem="2hH-pg-oQe" secondAttribute="centerX" id="nF8-0W-Wwz"/>
+                <constraint firstItem="J5u-7j-pgn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nLr-yt-8h9"/>
+                <constraint firstItem="9jU-q6-YK9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ra4-to-Xxq"/>
+            </constraints>
+        </view>
+        <tapGestureRecognizer id="A4b-En-0Sb" userLabel="tapMiddle">
+            <connections>
+                <action selector="onTapMiddleView:" destination="-1" id="AgI-CX-wyl"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
