@@ -16,6 +16,8 @@
 		1AC7CD381BB1639E00091FE0 /* PopupSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC7CD331BB1639E00091FE0 /* PopupSubViewController.xib */; };
 		1AC7CD3E1BB165BD00091FE0 /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC7CD3C1BB165BD00091FE0 /* PopupViewController.m */; };
 		1AC7CD3F1BB165BD00091FE0 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC7CD3D1BB165BD00091FE0 /* PopupViewController.xib */; };
+		1AD85EF81BB287E500D09CD7 /* ProgressHUDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD85EF51BB287E500D09CD7 /* ProgressHUDHelper.m */; };
+		1AD85EF91BB287E500D09CD7 /* TextHUDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD85EF71BB287E500D09CD7 /* TextHUDHelper.m */; };
 		1AE20A531BA6755900E5ED1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE20A521BA6755900E5ED1F /* main.m */; };
 		1AE20A561BA6755900E5ED1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE20A551BA6755900E5ED1F /* AppDelegate.m */; };
 		1AE20A591BA6755900E5ED1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE20A581BA6755900E5ED1F /* ViewController.m */; };
@@ -55,6 +57,10 @@
 		1AC7CD3B1BB165BD00091FE0 /* PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupViewController.h; sourceTree = "<group>"; };
 		1AC7CD3C1BB165BD00091FE0 /* PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupViewController.m; sourceTree = "<group>"; };
 		1AC7CD3D1BB165BD00091FE0 /* PopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
+		1AD85EF41BB287E500D09CD7 /* ProgressHUDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUDHelper.h; sourceTree = "<group>"; };
+		1AD85EF51BB287E500D09CD7 /* ProgressHUDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUDHelper.m; sourceTree = "<group>"; };
+		1AD85EF61BB287E500D09CD7 /* TextHUDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextHUDHelper.h; sourceTree = "<group>"; };
+		1AD85EF71BB287E500D09CD7 /* TextHUDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextHUDHelper.m; sourceTree = "<group>"; };
 		1AE20A4D1BA6755900E5ED1F /* M2QuickKitExtraDragon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M2QuickKitExtraDragon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE20A511BA6755900E5ED1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AE20A521BA6755900E5ED1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -201,6 +207,10 @@
 		1AE20A771BA6771900E5ED1F /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				1AD85EF41BB287E500D09CD7 /* ProgressHUDHelper.h */,
+				1AD85EF51BB287E500D09CD7 /* ProgressHUDHelper.m */,
+				1AD85EF61BB287E500D09CD7 /* TextHUDHelper.h */,
+				1AD85EF71BB287E500D09CD7 /* TextHUDHelper.m */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -445,7 +455,9 @@
 				1AC7CD281BB1630E00091FE0 /* M2PopupViewController.m in Sources */,
 				1AE20A851BA67C2E00E5ED1F /* StaticNotTouchLaunchADView.m in Sources */,
 				1AC7CD3E1BB165BD00091FE0 /* PopupViewController.m in Sources */,
+				1AD85EF91BB287E500D09CD7 /* TextHUDHelper.m in Sources */,
 				1AE20A531BA6755900E5ED1F /* main.m in Sources */,
+				1AD85EF81BB287E500D09CD7 /* ProgressHUDHelper.m in Sources */,
 				1AE20A991BA6BD7E00E5ED1F /* M2UserNoTouchMonitorViewController.m in Sources */,
 				1AC7CD301BB1636A00091FE0 /* M2SimpleKeyboardOverlapHelper.m in Sources */,
 				1AC7CD371BB1639E00091FE0 /* PopupSubViewController.m in Sources */,
